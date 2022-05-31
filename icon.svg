@@ -16,7 +16,7 @@
 path {
   fill:#0f0f0f; fill-opacity:1; stroke-width:1.46489"
 }
-    @media (prefers-color-scheme: dark)  {
+    @media (prefers-color-scheme: white)  {
     .cls-1 { fill: #f0f0f0 }
     }
   </style>
