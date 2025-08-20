@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f5dc; /* klassisches Beige */
+  background: linear-gradient(135deg, #f8f5f0, #eae7dc);
   font-family: 'Century Gothic', sans-serif;
 }
 .box{
