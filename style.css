@@ -1,9 +1,8 @@
-body{
+body {
   margin: 0;
   padding: 0;
-  background: url(Hintergrund.jpg) no-repeat;
-  background-size: cover;
-
+  background-color: #f5f5dc; /* klassisches Beige */
+  font-family: 'Century Gothic', sans-serif;
 }
 .box{
   width: 450px;
