@@ -51,3 +51,22 @@ ul{
 .box li a:hover{
   color: #b9b9b9;
 }
+
+.home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+
+  color: white;
+  text-decoration: none;
+
+  border: 2px solid white;
+  border-radius: 6px;
+
+  transition: 0.2s;
+}
+
+.home-button:hover {
+  background: white;
+  color: black;
+}
