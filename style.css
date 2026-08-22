@@ -70,3 +70,26 @@ ul{
   background: white;
   color: black;
 }
+
+.contact-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.contact-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-links i {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.contact-links span {
+    font-size: 14px;
+}
