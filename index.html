@@ -1,65 +1,85 @@
 <!DOCTYPE html>
-<html lang="de" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Jurek Lorber">
-    <meta property="og:description" content="Physics student at the University of Bonn with a passion for neuroscience.">
+    <title>Jurek Lorber | Medicine, Physics &amp; Neuroscience</title>
+    <meta name="description" content="Medical student at the University of Münster and physics graduate from Bonn, working on mathematical models of brain aging in the Tchumatchenko group.">
+    <link rel="canonical" href="https://www.jureklorber.de/">
+
+    <meta property="og:title" content="Jurek Lorber | Medicine, Physics &amp; Neuroscience">
+    <meta property="og:description" content="Medical student at the University of Münster and physics graduate from Bonn, working on mathematical models of brain aging in the Tchumatchenko group.">
     <meta property="og:image" content="https://www.jureklorber.de/Profilbild.jpg">
+    <meta property="og:image:alt" content="Jurek Lorber speaking into a microphone">
     <meta property="og:url" content="https://www.jureklorber.de/">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <title>Jurek Lorber</title>
+
     <link rel="manifest" href="manifest.webmanifest.json">
     <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" href="favicon-small.ico" sizes="16x16">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
-    <link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="box">
-      <img src="Profilbild.jpg" alt="Profilbild, auf dem ich zu sehen bin." class="box-img">
-      <h1>Jurek Lorber</h1>
-      <h5>Nice to meet you!</h5>
+    <main class="box">
+      <header class="profile-header">
+        <img src="Profilbild.jpg" alt="Jurek Lorber speaking into a microphone" class="box-img" width="200" height="200">
+        <h1>Jurek Lorber</h1>
+        <p class="subtitle">Medicine, physics &amp; neuroscience</p>
+        <p class="intro">
+          I am a medical student at the University of Münster with a BSc in physics
+          from the University of Bonn. My research focuses on mathematical models
+          of aging processes in the brain.
+        </p>
 
-      <p>
-        I am a medical student at the University of Münster with a Bachelor of Science in physics from University of Bonn. I have a strong passion for neuroscience and have done an Erasmus at the Neuroscience programm in Athens.
-      </p>
-      <p>
-        Im also part of the group of Prof. Tchumatchenko in Bonn, where I work on mathematical modeling of aging processes in the brain. I'm driven by curiosity, a love for interdisciplinary work and the ambition to contribute to tackling the big questions: What is the brain’s code? Can we find a unified theory of brain function? 
-      </p>
-      <p>
-        Beyond my studies, I am engaged in international and interdisciplinary projects: As a spokesperson of the German Academic Scholarship Foundation, as part of the organizing team of the German American Conference at Harvard, and in the leadership of the Young European Symposium.
-      </p>
-      <p>
-        Feel free to reach out to me below!
-      </p>
-    <ul class="contact-links">
-    <li>
-        <a href="mailto:mail@jureklorber.de">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Email</span>
-        </a>
-    </li>
+        <nav aria-label="Contact and CV">
+          <ul class="contact-links">
+            <li>
+              <a href="mailto:mail@jureklorber.de">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Email</span>
+              </a>
+            </li>
+            <li>
+              <a href="CV_Lorber.pdf">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <span>CV (PDF)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jurekl/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <li>
-        <a href="https://www.jureklorber.de/CV_Lorber.pdf">
-            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
-            <span>CV</span>
-        </a>
-    </li>
+      <section class="content-section" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <p>
+          In Prof. Tchumatchenko’s group in Bonn, I work on mathematical modeling
+          of aging processes in the brain. I am interested in how physics and
+          neuroscience can help us understand brain function.
+        </p>
+        <p>
+          My broader interests include the neural code and the search for a
+          unified theory of brain function. I also completed an Erasmus exchange
+          in the neuroscience Master's programme in Athens.
+        </p>
+      </section>
 
-    <li>
-        <a href="https://www.linkedin.com/in/jurekl/">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>LinkedIn</span>
-        </a>
-    </li>
-    </ul>
-    </div>
+      <section class="content-section" aria-labelledby="engagement-heading">
+        <h2 id="engagement-heading">Engagement</h2>
+        <p>Beyond my studies, I contribute to international and interdisciplinary initiatives:</p>
+        <ul class="engagement-list">
+          <li><strong>Young European Symposium:</strong> leadership team member.</li>
+          <li><strong>German Academic Scholarship Foundation:</strong> spokesperson.</li>
+          <li><strong>German American Conference at Harvard:</strong> organizing team member.</li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
