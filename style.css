@@ -1,99 +1,170 @@
+:root {
+  color-scheme: light;
+  --text: #292723;
+  --muted: #625b52;
+  --accent: #6a3d1a;
+  --surface: #fffdf9;
+  --border: #e3dbce;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  background: linear-gradient(180deg, #f8f5f0, #FAF2D4);
-  font-family: 'Century Gothic', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8f5f0, #faf2d4);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
 }
-.box{
-  width: 450px;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 40px;
+
+.box {
+  width: min(720px, calc(100% - 32px));
+  margin: 32px auto;
+  padding: clamp(24px, 5vw, 48px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow-wrap: anywhere;
+}
+
+.profile-header {
   text-align: center;
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  color: white;
-  font-family: 'Century Gothic', sans-serif;
 }
-.box-img{
-  border-radius: 5%;
+
+.box-img {
+  display: block;
   width: 200px;
-  height: 200px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 24px;
+  border-radius: 12px;
 }
-.box h1{
-  font-size: 40px;
-  letter-spacing: 4px;
-  font-weight: 100;
+
+h1,
+h2 {
+  line-height: 1.2;
+  text-wrap: balance;
 }
-.box h5{
-  font-size: 20px;
-  letter-spacing: 3px;
-  font-weight: 100;
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  font-weight: 650;
+  letter-spacing: -0.025em;
 }
-.box p{
-  text-align: justify;
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+  font-weight: 650;
 }
-ul{
+
+p {
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  color: var(--accent);
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.intro {
   margin: 0;
-  padding: 0;
-}
-.box li{
-  display: inline-block;
-  margin: 6px;
-  list-style: none;
-}
-.box li a{
-  color: white;
-  text-decoration: none;
-  font-size: 60px;
-  transition: all ease-in-out 250ms;
-}
-.box li a:hover{
-  color: #b9b9b9;
 }
 
-.home-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-
-  color: white;
-  text-decoration: none;
-
-  border: 2px solid white;
-  border-radius: 6px;
-
-  transition: 0.2s;
+a {
+  color: var(--accent);
+  text-underline-offset: 0.2em;
 }
 
-.home-button:hover {
-  background: white;
-  color: black;
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
 }
 
 .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.contact-links a {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
+.contact-links a,
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.contact-links a:hover,
+.home-button:hover {
+  background: var(--accent);
+  color: var(--surface);
 }
 
 .contact-links i {
-    font-size: 28px;
-    justify-content: center;
-    margin-bottom: 6px;
+  font-size: 1rem;
 }
 
-.contact-links span {
-    font-size: 14px;
-    justify-content: center;
+.content-section {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.content-section > :last-child {
+  margin-bottom: 0;
+}
+
+.engagement-list {
+  margin: 0;
+  padding-left: 1.25em;
+}
+
+.engagement-list li + li {
+  margin-top: 12px;
+}
+
+.paper-page h1,
+.paper-page .subtitle {
+  text-align: left;
+}
+
+.paper-page .subtitle {
+  color: var(--muted);
+}
+
+.home-button {
+  margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+  .box {
+    margin: 16px auto;
+  }
+
+  .box-img {
+    width: 160px;
+  }
 }
